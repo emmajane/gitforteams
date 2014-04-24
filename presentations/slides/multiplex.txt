@@ -1,0 +1,5 @@
+ multiplex: {
+     secret: '13896637677032408628',
+     id: '74f83f6c9e87dec6',
+     url: 'http://revealjs.jit.su:80'
+ },
