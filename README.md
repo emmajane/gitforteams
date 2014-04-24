@@ -16,6 +16,6 @@ Reveal.js slides for various workshops and conference sessions.
 - [Sample sprint workflow 1](resources/workflow-sample-sprint-1.md)
 - [Sample sprint workflow 2](resources/workflow-sample-sprint-2.md)
 - [Sample release cycle
-  summary](resources/relase-cycle-sample-1.md)
+  summary](resources/release-cycle-sample-1.md)
 
 Created by [Drupalize.Me](http://drupalize.me).
