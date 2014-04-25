@@ -13,9 +13,10 @@ Reveal.js slides for various workshops and conference sessions.
 
 */resources*
 
-- [Sample sprint workflow 1](resources/workflow-sample-sprint-1.md)
-- [Sample sprint workflow 2](resources/workflow-sample-sprint-2.md)
-- [Sample release cycle
-  summary](resources/release-cycle-sample-1.md)
+The following workflow documents are referenced in the presentation:
+
+- [Star Wars Workflow](resources/workflow-sample-sprint-1.md)
+- [Whispering Pines Weekly Workflow](resources/workflow-sample-sprint-2.md)
+- [Whispering Piles - release cycle](resources/release-cycle-sample-1.md)
 
 Created by [Drupalize.Me](http://drupalize.me).
