@@ -6,6 +6,8 @@ Twitter: [emmajanehw](http://twitter.com/emmajanehw)
 
 [emma.westby@drupalize.me](mailto:emma.westby@drupalize.me)
 
+repo: https://github.com/DrupalizeMe/workflow-git-workshop
+
 -----
 ## Hello! My Name is Emma
 
