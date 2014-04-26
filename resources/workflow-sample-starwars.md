@@ -1,4 +1,4 @@
-Drupal 7: Sprint Workflow
+Star Wars Sprint Workflow
 -------------------------
 
 {NAME} is the product manager.

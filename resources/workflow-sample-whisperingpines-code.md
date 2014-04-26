@@ -1,4 +1,4 @@
-# Sample Workflow 2
+# Whispering Pines Workflow (code)
 
 This page includes copy-paste-able git commands for:
 

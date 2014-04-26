@@ -1,4 +1,4 @@
-# Sample Release Cycle Documentation
+# Whispering Piles Release Cycle Documentation
 
 ## Sprints and Release Cycle
 

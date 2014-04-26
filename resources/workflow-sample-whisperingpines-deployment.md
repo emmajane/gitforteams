@@ -1,4 +1,8 @@
-# Deployment - QA Server
+# Deployment for Whispering Pines Sprints
+
+Deployments are created weekly on two servers: QA and live.
+
+# QA Server
 
 The QA site is currently running off the **origin/qa** branch.
 
