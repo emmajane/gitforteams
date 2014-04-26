@@ -84,8 +84,7 @@ branch lives. You know how / where a branch is closed.
 
 Note: **Centralized:** everyone works in master from the same disk.
 **Branching** how we work. Anyone can check into master. **Forking** how
-Canonical works. The testbot gets final approval into master. Typical for open
-source projects.
+most FOSS projects work; also for CI where the testbot gets final approval into master.
 
 
 ## Patching
