@@ -11,7 +11,7 @@ version control system, git.
 
 Reveal.js slides for various workshops and conference sessions.
 
-- [LoneStar PHP](http://drupalizeme.github.io/workflow-git-workshop/presentations/slides/session-lonestarphp.html
+- [LoneStar PHP](http://drupalizeme.github.io/workflow-git-workshop/presentations/slides/session-lonestarphp.html)
 
 */resources*
 
