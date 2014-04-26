@@ -6,4 +6,4 @@ https://joind.in/10819
 
 [@emmajanehw](http://twitter.com/emmajanehw) // [@drupalizeme](http://twitter.com/drupalizeme)
 
-repository (and slides): https://github.com/DrupalizeMe/workflow-git-workshop
+https://github.com/DrupalizeMe/workflow-git-workshop
