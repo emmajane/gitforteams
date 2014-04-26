@@ -4,4 +4,6 @@ Feedback Welcome!
 
 https://joind.in/10819
 
-Emma Jane Westby // [@emmajanehw](http://twitter.com/emmajanehw) // [emma.westby@drupalize.me](mailto:emma.westby@drupalize.me)
+[@emmajanehw](http://twitter.com/emmajanehw) // [@drupalizeme](http://twitter.com/drupalizeme)
+
+[repository (and slides)](https://github.com/DrupalizeMe/workflow-git-workshop)
