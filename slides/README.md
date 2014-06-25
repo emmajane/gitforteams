@@ -3,11 +3,14 @@
 This directory contains the presentations used to teach Git
 workflow workshops.
 
-## Past Presentations
+## Presentations
 
-- LoneStarPHP - [slide deck]()
-- OSCON workshop - [slide deck]()
-- OSCON session - [slide deck]()
+- 2014-04-26 - LoneStarPHP session - [slide
+  deck](session-lonestarphp-strategy.md)
+- 2014-07-21 - OSCON workshop - [slide
+  deck](workshop-oscon-gitforteams.md)
+- 2014-07-22 - OSCON session - [slide
+  deck](session-oscon-gitforgrownups.md)
 
 ## Give a Presentation
 
