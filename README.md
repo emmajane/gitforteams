@@ -7,11 +7,11 @@ version control system, git.
 
 ## Contents
 
-*/presentations*
+*/slides*
 
 Reveal.js slides for various workshops and conference sessions.
 
-- [LoneStar PHP](http://drupalizeme.github.io/workflow-git-workshop/presentations/slides/session-lonestarphp.html)
+- [LoneStar PHP](slides/session-lonestarphp-strategy.md)
 
 */resources*
 
@@ -21,5 +21,3 @@ The following workflow documents are referenced in the presentation:
 - [Whispering Pines Weekly Workflow](resources/workflow-sample-whisperingpines-code.md)
 - [Whispering Pines - release cycle philosophy](resources/workflow-sample-whisperingpines-releasecycle.md)
 - [Whispering Pines - deployment](resources/workflow-sample-whisperingpines-deployment.md)
-
-Created by [Drupalize.Me](http://drupalize.me).
