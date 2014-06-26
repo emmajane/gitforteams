@@ -11,7 +11,9 @@ version control system, git.
 
 Reveal.js slides for various workshops and conference sessions.
 
-- [LoneStar PHP](slides/session-lonestarphp-strategy.md)
+- [2014: LoneStar PHP](slides/slides/session-lonestarphp-strategy.md)
+- [2014: OSCON
+  workshop](slides/slides/workshop-oscon-gitforteams.md)
 
 */resources*
 
