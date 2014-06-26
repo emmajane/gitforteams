@@ -253,10 +253,9 @@ Documentation:
 - Create a written narrative which describes the EXACT commands people should use to move code through the process. (See previous slide for examples.)
 
 ==========
-## Resources
+# Resources
 
-- [Managing Chaos: Digital Governance by Design](http://www.rosenfeldmedia.com/books/web-governance/)
-- [Workflows and Permissions Strategies](https://www.atlassian.com/git/workflows)
+- [Developer Workflow](http://www.developerworkflow.com/)
 - Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
   ([Cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/))
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
