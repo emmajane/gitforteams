@@ -172,7 +172,7 @@ Note: if you have the concept of stable releases, hotfixes, point releases, secu
 - Often has flippers/flags for fine grained access to in-progress features.
 - Fewer branches to maintain / keep updated.
 
-![continuous delivery: feature branches](../../resources/strategy-permissions-branching.png)
+![continuous delivery: feature branches](../../resources/strategy-branching-cd.png)
 
 Note: if you don't need the granularity of mulitple supported versions, you can probably get away with something closer to this branching strategy. Can you get away with just tags? Do you intend to go back and work on a previous version? As soon as you have the concept of a separate security hotfix, you need to introduce a separate branch. In CD: everything is urgent, so there's not a separation of a really urgent security fix. (a deployed system)
 
