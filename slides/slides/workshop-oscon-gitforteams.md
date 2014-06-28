@@ -31,9 +31,9 @@ branch lives. You know how / where a branch is closed.
 You'll want a copy of the slides for reference as we go through the activities. Please open this page now.
 
 ==========
-# Warm-up Exercise
+# Warm-up<br/> Exercise
 
-## People and Process Before Commands and Code
+## People and Process<br /> Before Commands and Code
 
 
 ## Sample (Rhetorical?) Questions
@@ -186,7 +186,7 @@ Which best describes your current setup?
 - Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
   
-On the sketch diagram you created previously, add a CIRCLE (or a triangle, or a pony) around the collation points for code. These represent new branches. Where possible, REDUCE the number of collation points because merging out-of-date branches is a potential pain point.
+<br />On the sketch diagram you created previously, add a CIRCLE (or a triangle, or a pony) around the collation points for code. These represent new branches. Where possible, REDUCE the number of collation points because merging out-of-date branches is a potential pain point.
 
 
 ## Your Home Work
@@ -196,6 +196,94 @@ On the sketch diagram you created previously, add a CIRCLE (or a triangle, or a 
 
 ==========
 # Part 3
+
+## Commit Granularity
+
+The Great Rebase Debate
+
+
+## What is a Commit
+
+<blockquote>Record changes to the repository</blockquote>
+
+
+## How can we use Commits
+
+- log
+- gitk
+- blame
+- bisect
+
+
+## Sharing Work: A brief history lesson
+
+The patch workflow and `git am`.
+
+<blockquote>The commit message is formed by the title taken from the "Subject: ", a blank line and the body of the message up to where the patch begins.</blockquote>
+
+In other words: a commit is a whole idea.
+
+
+## Sharing Work: Today
+
+`git push`
+
+Shares an entire branch, with all your micro commits.
+
+![branches collapsed by default](../../resources/git-log-graphical.png)
+
+
+## Compare: bzr
+
+![branches collapsed by default](../../resources/bzr-log-graphical.png)
+
+Note: branches are collapsed by default; there is a sane commit message when the branch is merged into master (unlike git which gives you a default "merged!" message)
+
+
+## Problem!
+
+Git tools are COMMIT-aware, not BRANCH-aware.
+
+- gitk
+- bisect
+
+
+## Solution!
+
+`git rebase`
+
+<blockquote>Forward-port local commits to the updated upstream head</blockquote>
+
+In English: re-draw the graph for the commit history as if the rebased commits were already in the history when you did your work.
+
+
+## Solution!
+
+`git rebase -i`
+
+<blockquote>Make a list of the commits which are about to be rebased. Let the user edit that list before rebasing. This mode can also be used to split commits (see SPLITTING COMMITS below).</blockquote>
+
+In English: combine, or separate, any commits previously made.
+
+
+## Yes, Re-write History
+
+Because the tools used to interpret history are crude, the recommended approach is simply to fix history.
+
+*TWITCH*
+
+But this is how Git works. So there you go.
+
+
+## Activity
+
+???
+
+- Do a rebase together.
+- Discuss team dynamics and which tools you'll want to use (bisect, gitk, blame, etc)
+
+==========
+# Part 4
 
 ## Putting it all Together
 
