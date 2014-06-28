@@ -89,10 +89,13 @@ If you want to make a PDF version of the slides:
    today).
 2. Immediately after the file name, add `?print-pdf`. e.g.
    `workshop-oscon.html?print-pdf`
-3. From the `File` menu, select `Print`.
-4. Locate and disable the Page Headers and Page Footers.
-5. Locate and click on "PDF". Select "Save as PDF...".
-6. Choose an appropriate location for your PDF. Click "Save".
+3. From the menu `File`, select `Page Setup...`.
+4. Change the orientation of the page from portrait to
+   landscape. Click `OK`.
+5. From the `File` menu, select `Print`.
+6. Locate and disable the Page Headers and Page Footers.
+7. Locate and click on "PDF". Select "Save as PDF...".
+8. Choose an appropriate location for your PDF. Click "Save".
 
 The deck should be printed out with the speaker notes appearing 
 below each slide (separated by a single line border).
