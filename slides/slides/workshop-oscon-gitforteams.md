@@ -41,7 +41,7 @@ You'll want a copy of the slides for reference as we go through the activities. 
 - Who has commit access?
 - Why do you know your code isn't broken?
 - Does your team use test-driven development?
-- Do you have an idependent quality assurance team?
+- Do you have an independent quality assurance team?
 - Can you deploy "broken" code?
 
 
@@ -55,7 +55,7 @@ Note: R&R = roles and responsibilities
 
 ## Activity: Sketch the Assembly Line
 
-Sketch a timeline of how you'd like new code to be incorporated into your project. Is there a review processs? A test suite? Minimal barriers to code commits?
+Sketch a time line of how you'd like new code to be incorporated into your project. Is there a review process? A test suite? Minimal barriers to code commits?
 
 (You will to refine this sketch during the workshop. There are no wrong answers right now.)
 
@@ -156,12 +156,12 @@ Identify and describe how your code is collated within your repository.
 ## Scheduled Release
 
 - Optimized for the collation of many smaller changes into a single release.
-- Typically used for a downloadable product; or web site with a scheduled release cycle (e.g. "Wednesdays").
+- Typically used for a download-able product; or web site with a scheduled release cycle (e.g. "Wednesdays").
 - Incorporates human-reviews, and possibly automated tests.
 
 ![scheduled release: gitflow](../../resources/strategy-branching-gitflow.png)
 
-Note: if you have the concept of stable releases, hotfixes, point releases, security releases, multiple supported versions, etc, then you need this granularity for your branches. There is always a period of time where you do not trust your code/developers and want to have a separate QA period. Thinking like a downloadable product: version 4 vs. version 5 of The Software (a piece of software)
+Note: if you have the concept of stable releases, hotfixes, point releases, security releases, multiple supported versions, etc, then you need this granularity for your branches. There is always a period of time where you do not trust your code/developers and want to have a separate QA period. Thinking like a download-able product: version 4 vs. version 5 of The Software (a piece of software)
 
 
 ## Continuous Deployment
@@ -174,7 +174,7 @@ Note: if you have the concept of stable releases, hotfixes, point releases, secu
 
 ![continuous delivery: feature branches](../../resources/strategy-branching-cd.png)
 
-Note: if you don't need the granularity of mulitple supported versions, you can probably get away with something closer to this branching strategy. Can you get away with just tags? Do you intend to go back and work on a previous version? As soon as you have the concept of a separate security hotfix, you need to introduce a separate branch. In CD: everything is urgent, so there's not a separation of a really urgent security fix. (a deployed system)
+Note: if you don't need the granularity of multiple supported versions, you can probably get away with something closer to this branching strategy. Can you get away with just tags? Do you intend to go back and work on a previous version? As soon as you have the concept of a separate security hotfix, you need to introduce a separate branch. In CD: everything is urgent, so there's not a separation of a really urgent security fix. (a deployed system)
 
 
 ## Activity
@@ -339,7 +339,7 @@ github.com/emmajane/gitforteams
 
 ## Final Activity: Sketch Your Workflow
 
-- Restructure your previous diagrams to include the infrasture where code is collated.
+- Restructure your previous diagrams to include the intrastate where code is collated.
 - Add arrows to represent the direction code travels.
 - To the arrows, add the git commands which you'd use.
 - Create a written narrative which describes the EXACT commands people should use to move code through the process. (See previous slide for examples.)
