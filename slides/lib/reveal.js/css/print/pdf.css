@@ -188,3 +188,14 @@ ul, ol, div, p {
 .reveal small a {
 	font-size: 16pt !important;
 }
+.reveal aside.notes {
+  border-top: 1px solid black;
+  display: block !important;
+  font-size: 16pt;
+  height: 100%;
+  line-height: 1.2em;
+  margin-top: 60px;
+  overflow: visible;
+  text-align: left;
+  visibility: visible;
+}

@@ -81,6 +81,21 @@ If you are using markdown files, you may use the following syntax:
 
 ````Note: Oh hey, these are some notes.````
 
+## Creating a Handout 
+
+If you want to make a PDF version of the slides:
+
+1. Open the deck in Firefox (it doesn't work in Chrome as of
+   today).
+2. Immediately after the file name, add `?print-pdf`. e.g.
+   `workshop-oscon.html?print-pdf`
+3. From the `File` menu, select `Print`.
+4. Locate and disable the Page Headers and Page Footers.
+5. Locate and click on "PDF". Select "Save as PDF...".
+6. Choose an appropriate location for your PDF. Click "Save".
+
+The deck should be printed out with the speaker notes appearing 
+below each slide (separated by a single line border).
 
 ## Differences from Standard Reveal.js
 
