@@ -328,7 +328,7 @@ Note: pre-launch: peer review with branched permission strategy; separate QA ser
 - Changes are collated weekly onto a QA server, and deployed from there.
 
 
-## Whispering Pines Workflow Documentation
+## Whispering Pines Workflow<br />Documentation
 
 github.com/emmajane/gitforteams
 
