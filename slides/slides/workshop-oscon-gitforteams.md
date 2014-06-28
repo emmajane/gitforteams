@@ -41,7 +41,7 @@ You'll want a copy of the slides for reference as we go through the activities. 
 - Who has commit access?
 - Why do you know your code isn't broken?
 - Does your team use test-driven development?
-- Do you have an idependent quality assurance team?
+- Do you have an independent quality assurance team?
 - Can you deploy "broken" code?
 
 
