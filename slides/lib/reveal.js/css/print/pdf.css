@@ -199,3 +199,6 @@ ul, ol, div, p {
   text-align: left;
   visibility: visible;
 }
+.reveal a:link:after, .reveal a:visited:after {
+  content:" [" attr(href) "] ";
+}
