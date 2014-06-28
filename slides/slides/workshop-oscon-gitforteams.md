@@ -327,7 +327,11 @@ Note: pre-launch: peer review with branched permission strategy; separate QA ser
 - Some test coverage.
 - Changes are collated weekly onto a QA server, and deployed from there.
 
-Documentation: 
+
+## Whispering Pines Workflow Documentation
+
+github.com/emmajane/gitforteams
+
 - [Whispering Pines Weekly Workflow](../../resources/workflow-sample-whisperingpines-code.md)
 - [Release philosophy](../../resources/workflow-sample-whisperingpines-releasecycle.md)
 - [Deployment](../../resources/workflow-sample-whisperingpines-deployment.md)
