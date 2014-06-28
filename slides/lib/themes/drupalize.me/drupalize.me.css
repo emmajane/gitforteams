@@ -28,7 +28,7 @@ body {
   font-weight: 200;
   letter-spacing: -0.02em;
   color: #424344;
-  background: url(logo.png) no-repeat 20px 20px;
+  /* background: url(logo.png) no-repeat 20px 20px; */
 }
 
 ::selection {
