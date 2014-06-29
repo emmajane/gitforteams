@@ -104,19 +104,43 @@ Everyone has read-write access to the same repository on a centralized disk (e.g
 - Con: No guarantee the code works.
 
 
-## Forked: Trust No One
+## Patched: Trust No One; Show Your Solutions
 
-Project forks give full permissions to developers so they can do work.
-New work is added to the main project through a request to the upstream project.
+Everyone has read access. Very few have write access. Suggested
+changes are presented as whole ideas in a single patch file for
+review.
+
+![Patching: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-patching.png)
+
+- Pro: Forces a review process.
+- Pro: Works well with git tools (bisect, gitk).
+- Con: Sharing work is more complicated than branching.
+- Con: Contributors (potentially) need to setup their own code
+  hosting platform.
+
+Note: This is what git was optimized for. It's archaic and
+doesn't work well with web-based code hosting and ticketing
+platforms such as GitHub.
+
+
+## Forked: Trust No One; Show Your Work
+
+Project forks give full permissions to developers so they can
+do work in any commit granularity they choose. New work is
+added to the main project through a request to the upstream
+project via a proposed **branch of commits**.
 
 ![Forking: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-forking.png)
 
 - Pro: Forces a review process.
-- Pro: Encourages experimentation.
+- Con: Commit granularity may prevent effective debugging. 
 - Con: Private repos must be duplicated per team member.
 - Con: More steps to incorporate new work.
 
-Note: This is the default strategy for public code repositories with open access for viewing the project.
+Note: This is the default strategy for public code repositories
+with open access for viewing the project. Wrote a resource on
+why this may be bad at
+http://developerworkflow.com/resources/evolution-social-coding.html
 
 
 ## Branched: Trust the Process
