@@ -10,185 +10,184 @@ This is not a talk about all the commands you can run in Git.
 - [ungit](https://github.com/FredrikNoren/ungit) web UI / visualization tool
 
 
-## More Warning!
+## "I've tried! I can't learn this stuff."
 
-This talk is kind of about how Joe and I decided to incorporate rebasing into
-our workflow.
+~ most people in this room
 
-<p style="margin-top: 1em" class="fragment fade-in">
-For the record: I still think rebasing is fundamentally wrong.
-</p>
-<p style="margin-top: 1em" class="fragment fade-in">
-And I have the mic.
-</p>
+Note: It’s not your fault. Honest. The way we teach web stuff isn’t the way that you probably need to be exposed to the information in order to learn it. Blame the teachers, not yourself. Or maybe not blame but, be persistent when working to solve important and sticky problems.
 
 
-## Final Warning!
+## "I am a Git rockstar."
 
-Git makes me angry inside. You can [read why](http://24ways.org/2013/git-for-grownups/)...if you want.
-
-Note: tl;dr: it is arrogant, poorly documented software.
+~ some people in this room
 
 
-## How We Normally <br>Teach Tech Topics
+## Git was built for (and by) Linux kernel developers.
 
-"Here's a list of 23893467 commands! <br />
-You should memorize use them!"
-
-Note: We tend to lead with the code. This is not adult education best practices.
-This is not best practices for adult education. "Andragogy" tells us adults want
-information which is relevant to their job, and immediately actionable. Adult
-learners are selfish.
+Note: Quick show of hands: How many people will raise their hand when asked? Great. And how many people here are Linux kernel developers?
 
 
-## My Goal for this Presentation
+## How we typically teach people "how to tech" has nothing to do with adult education best practices.
 
-By the end of this session you should be able to:
-
-- Determine a permission strategy for your project.
-- Determine a branching strategy for your project.
-- Create documentation which outlines how your team members will use version control.
-
-Note: We are going to examine these three concepts throughout this presentation.
+Note: RTFM: read the manual. Here are all the commands, here are all the options. Memorize everything, and figure out later how to apply the knowledge.
 
 
-## Workflow Solves Hard Problems with Trivial Questions
+## Adults learn best<br>when they can be selfish.
 
-- Who has permission to commit code?
-- At what point(s) does the code need to be reviewed and approved?
-- How often do you deploy code?
+Note: Andragogy assumes the following about the design of learning: Adults have the need to know why they are learning something. Adults learn through doing. Adults are problem-solvers. Adults learn best when the subject is of immediate use.
 
 
-## Assumption Alert!
 
-1. Inconsistency leads to mistakes.
-1. Anything that is arbitrary must follow a convention.
-1. Conventions should be documented.
-1. Only tested code is deployed.
-1. Faster is better.
+## "Please memorize all Git commands and use only rebasing when merging your work."
 
+~ No client ever.
 
-## Workflow = <br>Actions + Locations + Permissions
-
-![Example of the Star Wars Sprintflow](../../resources/workflow-peerreview.png)
-
-Note: this is where we want to end up by the end of today. You know where each
-branch lives. You know how / where a branch is closed.
-
-==========
-## Permission Strategies
-
-![Centralized: Everyone works in master](../../resources/strategy-permissions-centralized.png)
-![Forking: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-forking.png)
-![Branching: Trusted coders branch](../../resources/strategy-permissions-branching.png)
-
-Note: **Centralized:** everyone works in master from the same disk.
-**Branching** how we work. Anyone can check into master. **Forking** how
-most FOSS projects work; also for CI where the testbot gets final approval into master.
+Note: Your problem might sound like: My client keeps changing his mind, and but they don’t want to pay me to redo the work. Your problem doesn’t sound like: My client wants me to memorize all the parameters for using Git at the command line.
 
 
-## Patching
+## Start with the whole<br>to solve real problems.
 
-Everyone has read access. Very few have write access. Suggested changes are
-presented as a patch file for review.
-
-- Pro: Forces a review process.
-- Con: Patches need to be rerolled to stay up-to-date.
-- Example: Drupal
+Note: Define your real problem clearly. Learn how to use a tool to get your problem solved. Try solving the problem. Take notes about how smooth it was to solve your problem. Write recommendations to your future self on how you’d solve the problem in the future now that you know what you know.
 
 
-## Forking
+## ![Bloom's Taxonomy](assets/bloom-taxonomy.jpg)
 
-Project forks give full permissions to developers so they can do work.
-New work is added to the main project through a request to upstream project.
+[Source: education ambassador](http://educationambassador.com/resources/entry/android-apps-for-blooms-remembering)
 
-- Pro: Forces a review process.
-- Pro: "Modern" way of doing patches.
-- Pro: Encourages experimentation (dev controls their own project clone)
-- Example: joind.in
+Note: Remember: recall the information. memorize, define, duplicate. Understand/Explain: Explain ideas or concepts. Recognize, paraphrase, describe. Apply: Use the information in a new way. Illustrate, demonstrate. Analyze: distinguish between different parts. Compare, contrast, experiment, question, test. Evaluate: justify a stand or a decision. Judge, defend, argue. Create: Create new product or POV. Assemble, construct, design.
 
 
-## Branching
+## Agenda
 
-- Pro: Ensures clean/working master (good for CI)
-- Pro: Encourages experimentation (cheap to branch)
-- Pro: Reduces overhead of forking workflow
-- Con: Encourages code review (does not require)
-- Example: your internal project (probably)
+- Sample team workflow
+- Branch management strategies
+- Q&A / therapy session
 
-==========
-## Branching Strategies
+
+## ![Git GUIs won't solve your problem](assets/git-guis.png)
+
+
+## Your problems are (mostly) social.
+
+
+## ![break down diagrams](assets/workflow-lots.png)
+
+Note: Any workflow you can imagine, Git can probably handle.
+
+
+## ![git don't care](assets/workflow-gitdontcare.jpg)
+
+Note: Which is just a fun way of saying, "Git don't care!"
+
+
+## ![Start with people](assets/workflow-people.png)
+
+Note: If you're working on a very large teams, think in terms of roles, instead of individual people if it's easier.
+
+
+## ![Identify their tasks](assets/workflow-tasks.png)
+
+Note: once you've identified people on your team, write down the tasks they need to accomplish.
+
+
+## Who's on your code team?
+
+- developers
+- designers
+- project managers
+- clients
+
+Note: Write down a list of all of the people on your code team. This list may include:
+
+
+## What tasks do you work on?
+
+- Writing code.
+- Reviewing code.
+- Pushing tested code to the server.
+- Fixing broken code.
+
+Note: Maybe you do everything. Maybe you only do some things. Write a list of all the tasks you are actually responsible for.
+
+
+## What are your tools and constraints?
+
+- Version control software (we’ll always assume Git)
+- Code hosting system (Bitbucket, GitHub, self-hosted)
+- Server ecosystem (dev / staging / live)
+- Code editors & integrated developer environments (vim, Dreamweaver, Sublime, PHPstorm)
+- Automated testing systems or review “gates”
+
+Note: Often there are other things we need to fit into our workflow. Create a third list of any tools and restraints you are aware of.
+
+
+## What's your workflow?
 
 - Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
 - Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
-- Hybrid: [Squash Workflow](http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html)
+
+Note: With the team members identified, it’s time to sketch out how these people (ideally) work together.
+
+
+## Interpreting Workflows
+
+![GitFlow](assets/gitflow.png)
+
+Note: completed diagrams can be really hard to tease apart. Rebuild the diagrams to make them your own.
+
+
+## ![GitFlow for Project Managers](assets/gitflow-for-pm.png)
+
+
+## "Continuous Deployment"
+
+![continuous delivery: feature branches](../../resources/strategy-permissions-branching.png)
+
+Note: Code is deployed faster than scheduled releases. Requires (trusted) test coverage. Typically uses a mechanical gatekeeper to check in code to the master branch. Fewer branches to maintain / keep updated.
+
+
+## The Star Wars Workflow
+
+![Example of the Star Wars Sprintflow](../../resources/workflow-starwars.png)
+
+Note: pre-launch: peer review with branched permission strategy; separate QA server where work is available for review, but typically devs just look at their local version of the current dev branch.
 
 
 ## Scheduled Release
 
-- Incorporates human-reviews, and possibly automated tests.
-- Allows you to collate many smaller changes into a single release.
-
 ![scheduled release: gitflow](../../resources/strategy-branching-gitflow.png)
 
-
-## Continuous Deployment
-
-- Code is deployed faster than scheduled releases.
-- Requires (trusted) test coverage.
-- Typically uses a mechanical gatekeeper to check in code to the master branch.
-- Fewer branches to maintain / keep updated.
-
-![continuous delivery: feature branches](../../resources/strategy-permissions-branching.png)
-
-==========
-## Example Worklows
-
-- These examples are pulled from Drupalize.Me.
-- This is a product with no external stakeholders.
-- YMMV, YOLO, etc.
-
-Note: these are both in the resources for the repository
+Note: Incorporates human-reviews, and possibly automated tests. Allows you to collate many smaller changes into a single release.
 
 
-## How We Work
+## Whispering Pines Workflow
+
+![Example of the Star Wars Sprintflow](../../resources/workflow-whisperingpines.png)
+
+Note: Aiming for stability first, speed second. Some test coverage. Changes are collated weekly onto a QA server, and deployed from there.
+
+
+## Sketch out your workflow
+
+- Identify the roles on your team.
+- Identify the relationships between the team members.
+- Draw arrows to show how code flows between team members.
+- Map the Git commands onto the arrows.
+
+
+## Sample Workflow
 
 ![Example of the Star Wars Sprintflow](../../resources/workflow-peerreview.png)
 
 Note: this is the star wars sprintflow. There are more layers for the WP workflow.
 
-
-## Note on Naming
-
-- Use terms which resonate with your team (MVP -> LBB).
-- Giving a descriptive name to projects and processes allows you to change the meaning by changing the name.
-- There are a lot of Ewoks.
-- There are more My Little Ponies.
-
-
-## During the Upgrade
-
-- Drupal 6 -> Drupal 7 upgrade
-- Aiming for speed of code work, not stability.
-- Changes were not being deployed to the live server.
-- Total time: 18 months.
-- [Star Wars Sprintflow](../../resources/workflow-sample-starwars.md)
-
-
-## Post-Launch
-
-- Aiming for stability first, speed second.
-- We do not have complete test coverage.
-- Changes are collated weekly onto a QA server, and deployed from there.
-- [Whispering Pines Weekly Workflow](../../resources/workflow-sample-whisperingpines-code.md)
-- [Release philosophy](../../resources/workflow-sample-whisperingpines-releasecycle.md)
-- [Deployment](../../resources/workflow-sample-whisperingpines-deployment.md)
-
 ==========
 ## Resources
 
+- github.com/emmajane/gitforteams
+- [Workflow for Developers](http://developerworkflow.com)
 - [Managing Chaos: Digital Governance by Design](http://www.rosenfeldmedia.com/books/web-governance/)
 - [Workflows and Permissions Strategies](https://www.atlassian.com/git/workflows)
 - Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
@@ -196,7 +195,3 @@ Note: this is the star wars sprintflow. There are more layers for the WP workflo
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
 - Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
-- Hybrid: [Squash Workflow](http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html)
-
-
-![Workflow? Git does not care](assets/workflow-gitdontcare.jpg)
