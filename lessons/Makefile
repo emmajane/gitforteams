@@ -19,7 +19,7 @@
 # Create a single PDF out of all known files. Must update the makefile.
 # Opted to not use recursion because I didn't actually want all README
 # files from the cookbooks
-FILES := 01-intro/README.md	02-getting-started/README.md 03-clone-remote/README.md 04-config/README.md 05-init-local/README.md 06-connect-remote/README.md 07-branches/README.md 08-tags/README.md 09-find-and-fix/README.md 10-rollback-reset/README.md 11-rebase/README.md 12-github/README.md 13-bitbucket/README.md
+FILES := 00-intro/README.md	01-getting-started/README.md 02-clone-remote/README.md 03-config/README.md 04-init-local/README.md 05-connect-remote/README.md 06-branches/README.md 07-tags/README.md 08-find-and-fix/README.md 09-rollback-reset/README.md 10-rebase/README.md 11-github/README.md 12-bitbucket/README.md
 
 once :
 	pandoc $(FILES) -o README.pdf
