@@ -53,11 +53,20 @@ Were you able to find the bug?
 
 ### Summary
 
+- `git log <since_last_merge_to>..<what's_been_added_here> --oneline`
 - `git bisect start`
-- `git bisect good`
-- `git bisect bad`
+- `git bisect good <commit_id>`
+- `git bisect bad <commit_id>`
 - `git bisect reset`
 - `git checkout <branch>`
+
+### Gotchas
+
+- You need to be in the top-level directory to run bisect.
+- It is assumed that the current work is "bad". So, you can't go
+  back and find when something is fixed, you need to go back and
+  find where something broke. (Git gets very confused if you try to
+  find where a **fix** was introduced.)
 
 ## Finding the History of a File with Blame
 
