@@ -54,24 +54,110 @@ tutorials, I'm going to focus on how we use branches when
 *collaborating with others*, and not just working on our own project
 (much like I am with this repository of lesson notes).
 
-## Overview of Branching Strategies
+## Listing All Branches
 
-There are effectively two ways that teams can work on software: either 
-they collate the work, saving it up for a major release; or they are
-continuously deploying very tiny changes to production. (I sometimes joke 
-that the original continuous deployment was live editing on the server. 
-Some people think I'm being serious when I say this though ... so be careful if you try to make the same joke.)
+Branches allow us to work on independent thoughts at a time. Your repository will
+have its own branches. Remote repositories have their own branches. Just because
+you can see a branch, doesn’t mean you have the latest content.
+
+### Lesson Objectives
+
+By the end of this lesson, you will be able to list local branches, and remote
+branches for your repository.
+
+### Self-Check
+
+Using a cloned copy of the the lesson repository, you should be able to list the
+local branches, and the remote branches.
+
+### Summary
+
+- `git branch`
+- `git branch --list`
+- `git branch -a`
+- `git branch -r`
+- `git fetch`
+- `git remote show <remote_name>`
+
+## Using a Different Branch
+
+When you checkout a branch, you are updating the visible files on your system
+("the working tree") to match the version stored in repository.
+
+When you switch between branches, it can sometimes be helpful to have a Finder
+window open so you can see what files are changing (appearing and disappearing)
+when the different branches are checked out.
+
+### Lesson Objectives
+
+By the end of this lesson, you will be able to check out a local branch.
+
+### Self-Check
+
+When you changed to a different branch, the git log showed a different commit 
+for the most recent work than the branch you were on previously. (You can check
+this with `git log --oneline`.) Technically two branches don't NEED to have
+different commits though, so self-check isn't perfect.
+
+### Summary
+
+- `git checkout <branch_name>`
+- `git checkout --track <remote>/<branch_name>`
+
+## Establishing Your Branching Strategy
+
+As you build up your work, you'll add more parallel branches to your work flow.
+Any work which happens in a branch is completely isolated from other branches in
+your repository. Can you have completely different files for completely different
+versions of your software. The branches should all have a relationship to one
+another though, they shouldn't contain completely different projects!
+
+You can invent your own branching strategies. For example, in the repository for
+these lessons, I have one main branch that I use for workshops. Nearly all of my
+work is done directly in this branch and it is immediately visible when people
+visit the project page.
+
+I also have a few branches for ideas that are still in progress, and not ready for
+immediate consumption (they're still available, you just need to know to look for
+them). For example: while I was working on the video lessons, I created a new
+branch. When the lessons are recorded, I'll merge this branch back into the master
+branch so that the content is immediately visible to everyone. I also have a
+branch with random files which I have no intention of merging back into the master
+branch. This branch, sandbox, is meant to help you learn about branching. It's
+sort of a fun Easter egg for people who aren't taking the lessons, and don't
+bother looking into the branch.
+
+What I'm doing with this repository is quite specialized and unique to my project.
+You can invent your own branching strategies for your own projects, but when it
+comes to software development, there are a number of "best practices" out there
+which you may want to consider following. By using a convention, you make it a lot
+easier for other people to collaborate on your project, AND do things correctly.
+
+Let's take a look at these branching strategies now.
+
+There are effectively two ways that teams can work on software: either they
+collate the work, saving it up for a major release; or they are continuously
+deploying very tiny changes to production. (I sometimes joke that the original
+continuous deployment was live editing on the server.  Some people think I'm being
+serious when I say this though ... so be careful if you try to make the same
+joke.)
 
 **Scheduled Release**
 
 - Most popular example: GitFlow.
 - Optimized for the collation of many smaller changes into a single release.
-- Typically used for a download-able product; or web site with a scheduled release cycle (e.g. "Wednesdays").
+- Typically used for a download-able product; or web site with a scheduled 
+  release cycle (e.g. "Wednesdays").
 - Incorporates human-reviews, and possibly automated tests.
 
 ![scheduled release: gitflow](../resources/strategy-branching-gitflow.png)
 
-If you have the concept of stable releases, hotfixes, point releases, security releases, multiple supported versions, etc, then you need this granularity for your branches. There is always a period of time where you do not trust your code/developers and want to have a separate QA period. Thinking like a download-able product: version 4 vs. version 5 of The Software (a piece of software).
+If you have the concept of stable releases, hotfixes, point releases, security
+releases, multiple supported versions, etc, then you need this granularity for
+your branches. There is always a period of time where you do not trust your
+code/developers and want to have a separate QA period. Thinking like a
+download-able product: version 4 vs. version 5 of The Software (a piece of
+software).
 
 **Continuous Deployment**
 
@@ -91,6 +177,13 @@ need to introduce a separate branch. In CD: everything is urgent, so
 there's not a separation of a really urgent security fix. CI, CD vs CD:
 http://puppetlabs.com/blog/continuous-delivery-vs-continuous-deployment-whats-diff
 
+A great way to familiarize yourself with different branching strategies, is to
+check out what projects are doing. Here are a few to check out:
+
+- `git clone http://git.drupal.org/project/drupal.git`
+- `git clone https://github.com/git/git`
+- `git clone https://github.com/twbs/bootstrap`
+
 ### Lesson Objectives
 
 By the end of this lesson, you will be able to identify two common
@@ -106,62 +199,106 @@ continuous deployment branching pattern?
 
 ### Summary
 
-These days continuous deployment is the new hot. Everyone wants to
-be able to do this. And for very tiny projects, I definitely just
-work in master and putter along with each commit acting as a
-resolution to a problem; however; the bigger the team gets,
-the more it will benefit from having some structure in how the
+These days continuous deployment is the new hot. Everyone wants to be able to do
+this. And for very tiny projects, I definitely just work in master and putter
+along with each commit acting as a resolution to a problem; however; the bigger
+the team gets, the more it will benefit from having some structure in how the
 people collaborate on the work.
 
-New teams are unlikely to have the infrastructure needed for
-continuous deployment. They are less likely to be writing reliable
-tests, and they are more likely working on longer sprint cycles
-(with deployments happening once every couple of weeks, not several
-times a day). For this reason, this video series is going to focus
-on how to work with your team in setting up a scheduled release
+New teams are unlikely to have the infrastructure needed for continuous
+deployment. They are less likely to be writing reliable tests, and they are more
+likely working on longer sprint cycles (with deployments happening once every
+couple of weeks, not several times a day). For this reason, this video series is
+going to focus on how to work with your team in setting up a scheduled release
 branching strategy.
 
-## Listing All Branches
+## Creating a Topic Branch
 
-List all branches in the repository. Compare between the local branches, and the remote branches.
+It's very easy to create a new branch in Git. Almost too easy...as Git doesn't
+provide any guidance on what you're supposed to do in that branch. Assuming you're
+working on a software project, the best way to decide what goes into a branch, it
+start with the Issue Tracker. 
 
-## Using a Different Branch
+by creating a written description of what you're about to do, you will have a
+clear sense of when to start AND finish with your branch. Yes, this will often
+feel like overhead, but it is a really good habit to get into, especially when
+you're working in larger teams.
 
-Checkout a different branch. Open a finder window at the same time and see how files (dis)appear when different branches are checked out.
+In GitFlow, all new ideas use “Feature” branches. (There's nothing special about
+them technically, it's just a naming convention to make it easier to think about
+what kind of work happens in the branch.) Feature branches can incorporate one, or
+many tickets if the idea is really big. Be careful though, if you have a lot of
+people working on really different ideas, and their branches diverge
+significantly, you risk creating mini projects instead each repository, making it
+difficult to incorporate the work into the common branch at release time.
 
-## Using Best Practices for Changes
+If it's a new project, you may only have feature branches, and ane integration
+branch. By the GitFlow convention, your integration branch would be named
+`develop`, and the master branch wouldn't be updated until you had an official
+release. Do whatever works for you, but make sure you document whatever you do!
 
-Always start by creating a written description of what you're about to do. Yes, this will often feel like overhead, but it is a really good habit to get into, especially when you're working in larger teams.
+In your private repository on GitLab, create a new issue ticket which outlines the
+changes you're about to make. Next, create a corresponding branch in your
+repository.  Do your work. Finally, save the changes to your local branch by
+adding the changed file, and then committing it.
 
-## Creating an Issue in GitLab
+### Lesson Objectives
 
-In your private repository, create a new issue ticket which outlines the changes you're about to make.
+By the end of this lesson, you will be able to create a new branch using best
+practices, to solve a specific issue identified in your code hosting system. 
 
-## Creating a Branch
+### Self-Check
 
-Using the branching convention, start on MASTER, and then, create a new branch using the convention: ticket number-issue, create a new branch in your local respository. Checkout the new branch as well
+You have a new branch created using the naming convention
+`issue_number-terse_description`.
 
-## Creating a Tracked Branch
+### Summary
 
-Repeat the previous lesson, but this time add tracking when the
-branch is created. Start by checkout of master, and branching from
-there.
+1. Create a new issue; note the number on the issue
 
-## Adding Changes to your Local Repository
+The new ticket I created was as follows:
 
-Use the command `git add filename` to add the file to the index. Then commit your changes to save the change to your local repository. I usually do a commit at the command line, and then commit --amend to write a longer commit message which relates to the issue.
+```
+Problem: The repository is too serious.
+
+Rationale for change: having more jokes in the repository will allow people to
+take a break from learning git and have a bit of a laugh.
+
+QA: After this ticket has been resolved, I will be able to read more bad jokes.
+```
+
+2. Create a new branch using `git checkout -b <issue-description> sandbox`
+3. Add a new joke to the file `badjokes.md`. You now have a "dirty" repository
+   with one modified file.
+4. Add the joke file to the staging index with `git add <file>`.
+5. Commit your joke file to the repository with `git commit`.
+
+I usually do a commit at the command line, and then commit --amend to write a
+longer commit message which relates to the issue.
 
 ## Uploading Your Changes with git push
 
-Upload the change to the remote repository with `git push origin
-master`. In newer versions of git, you should be able to just use
-`git push`.
+To upload your changes to the remote repository, we'll use the command `push`. A
+few things need to be in place for this to happen though.
 
+1. You need to have write permission to the repository. Assuming you setup your
+   SSH keys correctly, this shouldn't be an issue.
+2. The branch you are uploading needs to have a connection to a specific remote
+   repository. i.e. you need a "destination"
 
-## Adding Tracking to a Previously Created Branch
+I generally take the lazy approach to pushing up my branches, and always start
+with the shortest sequence, adding parameters as needed.
 
-Checkout the branch which doesn't have tracking added. Try (and fail) to push the branch. Make necessary adjustments to be able to upload the branch to the remote repository.
+### Lesson Objectives
 
-## Confirming Your Branch was Uploaded
+By the end of this lesson, you will be able to upload your branches to remote
+repositories by using the Git command push.
+
+### Self-Check
 
 Log into GitLab to ensure the branch has been uploaded to the remote repository.
+
+### Summary
+
+`git push`
+`git push <remote_name> <branch_name>`
