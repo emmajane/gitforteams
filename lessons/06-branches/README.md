@@ -302,3 +302,51 @@ Log into GitLab to ensure the branch has been uploaded to the remote repository.
 
 `git push`
 `git push <remote_name> <branch_name>`
+
+## Accepting and Merging New Work
+
+Once the code review process has been completed, it's time to accept
+the new work into the main branch for your project. There are a few
+different ways you can combine branches in git. The first maintains
+the branch identity, showing that at one time these commits lived in
+their own branch. The second does not maintain branch identity.
+Instead, it fast-forwards through the commits you're adding to the
+main branch. In the history, the fast-forward merge (which is the
+default) will make your historical graphs look as though the commits
+have always been in place. Those who use a rebasing workflow will
+often choose to merge branches with `--no-ff` to maintain the
+illusion of the branch, while always updating their master branch
+with a rebase to keep a perfect set of "swim lanes". If you prefer a 
+history with fewer lines to follow, use the default.
+
+### Lesson Objectives
+
+By the end of this lesson, you will be able to update a update a
+local branch using git pull, and merge a local development branch
+using the fast-forward and true merge strategies.
+
+### Self-Check
+
+Are you able to incorporate the sandbox branch, or the joke branch
+into your work?
+
+### Summary
+
+- `git checkout master`
+- `git fetch`
+- `git merge <remote>/master`
+- `git pull` // a more aggresstive shortcut to fetch + merge
+- (assuming master is now up-to-date)
+- `git merge <ticket_branch>` // attempts fast forward merge
+- `git merge --no-ff <ticket_branch>` // forces a new commit,
+  maintains the illusion of a branch
+- `git push` // upload the revised copy of the master branch
+
+Example of fast forwarding vs. a true merge:
+
+- `git checkout -b integration_ff`
+- `git merge 1-bad_jokes`
+- `git log --oneline --graph`
+- `git checkout -b integration_no-ff master`
+- `git merge --no-ff 1-bad_jokes`
+- `git log --oneline --graph`
