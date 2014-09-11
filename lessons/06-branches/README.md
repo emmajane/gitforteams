@@ -362,10 +362,16 @@ a nicer reference to make decisions from. I personally use
 Kaleidoscope, but there are other free tools for each of the
 different operating systems.
 
+Once you've solved a merge conflict once, you'll never want to have
+to solve it again. You can use `rerere` to save your resolutions.
+
 ### Lesson Objectives
 
 By the end of this lesson, you will be able to resolve a merge
 conflict.
+
+By the end of this lesson, you will be able to enable to "RE-use a
+REcorded Resolution" while rebasing. 
 
 ### Self-Check
 
@@ -373,7 +379,13 @@ Edit two files at the same place in two different branches and then
 try to merge them. Decide ahead of time which of the two branches
 you want to keep the changes from.
 
+Add the same error (which generates a merge conflict) to two
+different branches, and bring them both up-to-date with rebasing.
+You should only have to resolve the first merge conflict.
+
 ### Summary
+
+- `git config --global rerere.enabled true`
 
 - `git checkout -b one`
 - (edit the readme title)
