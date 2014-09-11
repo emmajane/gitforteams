@@ -82,13 +82,10 @@ diff, and show.
 
 - `git log --oneline`
 - (choose a commit for the message you do want to keep)
-- `git rebase -i`
+- `git rebase -i <commit_id>`
 - pick: leave as-is
-- edit: change the files in the commit
-- reword: change only the commit message
 - squash: keep the commit, but merge it into the previous commit (2
   for 1 deal)
-- fixup: like squash, but throw-away the commit message 
 
 ## Using Rebase to Truncate a Branch Before Merging
 
