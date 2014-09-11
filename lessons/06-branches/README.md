@@ -350,3 +350,37 @@ Example of fast forwarding vs. a true merge:
 - `git checkout -b integration_no-ff master`
 - `git merge --no-ff 1-bad_jokes`
 - `git log --oneline --graph`
+
+## Dealing with Merge Conflicts
+
+If two developers have changed the same part of a file and you try
+to merge those changes, Git will be unable to know which one should
+be kept and will stop the merge process. You will need to check the
+files by hand and determine which copy to keep. You may want to use
+a mergetool for particularly complicated merges as it will give you
+a nicer reference to make decisions from. I personally use
+Kaleidoscope, but there are other free tools for each of the
+different operating systems.
+
+### Lesson Objectives
+
+By the end of this lesson, you will be able to resolve a merge
+conflict.
+
+### Self-Check
+
+Edit two files at the same place in two different branches and then
+try to merge them. Decide ahead of time which of the two branches
+you want to keep the changes from.
+
+### Summary
+
+- `git checkout -b one`
+- (edit the readme title)
+- `git checkout master`
+- `git checkout -b more`
+- (edit the readme title)
+- `git merge one`
+- (edit the file with the conflict)
+- `git add .`
+- `git commit`
