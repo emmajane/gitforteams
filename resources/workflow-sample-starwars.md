@@ -39,11 +39,11 @@ D7
 
 **To make a branch:**
 
-    git checkout dev
-    git pull origin dev
-    git branch <branchname>
-    git checkout <branchname>
-    git push origin <branchname>
+    `git checkout dev`
+    `git pull origin dev`
+    `git branch <branchname>`
+    `git checkout <branchname>`
+    `git push origin <branchname>`
 
 Do your work and push from here.
 
