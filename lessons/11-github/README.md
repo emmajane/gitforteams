@@ -1,7 +1,8 @@
 # Collaborating on GitHub
 
 **Overview of GitHub**
-Introduction to who/what GitHub is. Special notes: this is a private company, it is not based on open source software. It is a platform which improves your experience with Git, but has several of its own GitHub “isms” which can make it difficult to know when you're working with Git, and when you're working with GitHub terms.
+
+GitHub is a popular code hosting system. Unlike GitLab, which we've been using, GitHub is a private company, it is not based on open source software. GitHub can definitely improve your experience with Git, but has several of its own GitHub “isms” which can make it difficult to know when you're working with Git terms, and when you're working with GitHub terms.
 
 **Creating an Account**
 Signup for a GitHub account.

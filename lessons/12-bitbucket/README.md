@@ -1,7 +1,7 @@
 # Collaborating on BitBucket
 
 **Overview of BitBucket**
-Introduction to who/what BitBucket is. Special notes: this is a private company, it is not based on open source software. It is a platform which improves your experience with Git, but has several of its own “isms” which can make it difficult to know when you're working with Git, and when you're working with their terms.
+BitBucket is a popular code hosting system by the same folks who built JIRA. I really like using BitBucket for projects where I'm collaborating with others, but need to hide my work. It offers a few free private repositories, which is perfect for the smaller independent projects that I work on from time to time.
 
 **Creating an Account**
 Signup for a BitBucket account.
