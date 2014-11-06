@@ -520,8 +520,8 @@ github.com/emmajane/gitforteams
 <li>What will you change for your project?
 </td>
 <td>
-<li>Give the OSCON organizers (and me) your feedback.
-<li>bit.ly/oscon-feedback-git
+<li>Give us your feedback.
+<li>joind.in/talk/view/12738
 </td>
 </tr>
 </table>
