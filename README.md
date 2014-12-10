@@ -4,6 +4,8 @@ Git for Teams of One or More
 Supporting files for workshops and sessions about creating a
 developer work flow for your project (and your team) with the
 version control system, git.
+Basis of ORM video course
+
 
 ## Contents
 
