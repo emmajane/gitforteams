@@ -35,15 +35,15 @@ NOTE: you must keep your branch up with dev. **At least daily you should update 
 **To start:**
 
 D7
-    git clone git@githost.example.com/d7me.git
+    `git clone git@githost.example.com/d7me.git`
 
 **To make a branch:**
 
-    `git checkout dev`
-    `git pull origin dev`
-    `git branch <branchname>`
-    `git checkout <branchname>`
-    `git push origin <branchname>`
+ -  `git checkout dev`
+ -  `git pull origin dev`
+ -  `git branch <branchname>`
+ -  `git checkout <branchname>`
+ -  `git push origin <branchname>`
 
 Do your work and push from here.
 
