@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1458" measuredH="1777" mockupW="1441" mockupH="1765">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1338" measuredH="1667" mockupW="1321" mockupH="1655">
   <controls>
     <control controlID="8" controlTypeID="__group__" x="17" y="12" w="421" h="431" measuredW="421" measuredH="431" zOrder="0" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
@@ -31,7 +31,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="50" controlTypeID="__group__" x="145" y="608" w="1313" h="1169" measuredW="1313" measuredH="1169" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="50" controlTypeID="__group__" x="25" y="498" w="1313" h="1169" measuredW="1313" measuredH="1169" zOrder="1" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="38" controlTypeID="__group__" x="0" y="0" w="1313" h="1169" measuredW="1313" measuredH="1169" zOrder="0" locked="false" isInGroup="50">
           <groupChildrenDescriptors>
@@ -138,9 +138,9 @@
                     <text>reset%20--hard%20%3Ccommit_id%3E</text>
                   </controlProperties>
                 </control>
-                <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="616" y="931" w="-1" h="-1" measuredW="138" measuredH="27" zOrder="16" locked="false" isInGroup="0">
+                <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="586" y="931" w="-1" h="-1" measuredW="220" measuredH="27" zOrder="16" locked="false" isInGroup="0">
                   <controlProperties>
-                    <text>rebase%20--interactive</text>
+                    <text>rebase%20--interactive%20%3Ccommit_id%3E</text>
                   </controlProperties>
                 </control>
                 <control controlID="17" controlTypeID="com.balsamiq.mockups::RoundButton" x="827" y="556" w="164" h="136" measuredW="32" measuredH="32" zOrder="17" locked="false" isInGroup="0">
