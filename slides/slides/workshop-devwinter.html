@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Git for Teams of One or More</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Emma Jane Westby">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../lib/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="../lib/themes/drupalize.me/drupalize.me.css" id="theme">
+
+    <!-- No caching! -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../lib/reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="../lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- title slide -->
+        <section data-markdown="" data-separator="^\n={4,}" data-vertical="^\n-{4,}" data-notes="^Note:">
+        # Git for Teams of One or More 
+        
+        Emma Jane Hogbin Westby 
+        
+        Twitter: [emmajanehw](http://twitter.com/emmajanehw)
+        
+        slides: http://gitforteams.com/workshops/devwinter
+        </section>
+
+        <!-- instructor intro -->
+        <section data-markdown="" data-separator="^\n={4,}" data-vertical="^\n-{4,}" data-notes="^Note:">
+        ## Hello! My Name is [Emma](http://en.wikipedia.org/wiki/Emma_Jane_Hogbin)
+        
+        @emmajanehw
+        
+        Note: I have been using version control for 10+ years and had the great misfortune of teaching CVS to arts majors before distributed version control was a thing. This workshop is being turned into an O'Reilly book. Yay!
+        </section>
+
+        <!-- main presentation file(s) -->
+        <section data-markdown="workshop-devwinter.md" data-separator="^={10,}" data-vertical="^\n\n" data-notes="^Note:[^\n]"></section>
+
+        <!-- outtro: include evaluation slide link -->
+        <section data-markdown="" data-separator="^\n={4,}" data-vertical="^\n-{4,}" data-notes="^Note:">
+        # Thanks!
+        
+        Let's stay in touch!
+        
+        [@emmajanehw](http://twitter.com/emmajanehw)
+        
+        emma@emmajane.net
+        
+        http://gitforteams.com/workshops/devwinter
+        </section>
+      </div>
+
+    </div>
+
+    <script src="../lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="../lib/reveal.js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        multiplex: {
+            secret: null,
+            id: '74f83f6c9e87dec6',
+            url: 'http://revealjs.jit.su:80'
+        },
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          //{ src: '../lib/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+          { src: '../lib/reveal.js/plugin/multiplex/client.js', async: true }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
