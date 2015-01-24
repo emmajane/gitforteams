@@ -1,24 +1,8 @@
-## Warning!
-
-This is not a talk about all the commands you can run in Git.
-
-### Resources for Commands:
-
-- [Mega Resources List o' Links](http://developerworkflow.com/resources/offsite.html)
-- [Git Documentation](http://git-scm.com/doc)
-- [Pro Git](http://git-scm.com/book)
-
-
-## Yes, the slides are uploaded
-
-gitforteams.com/workshops/devwinter
-
-
 ## On an index card...
 
-Write down your answer to:
+Write down your answer to the following questions:
 
-- REQUIRED: What (workflow-related) **questions** do you need answered today?
+- REQUIRED: What do you need to learn about Git today?
 - OPTIONAL: How does Emma **get in touch** with you after the workshop to make sure your question(s) were answered?
 
 Note: during the break I'm going to review the index cards to make sure we're on track.
@@ -28,9 +12,18 @@ Note: during the break I'm going to review the index cards to make sure we're on
 
 By the end of this session you should be able to:
 
-- Choose a **permission strategy** for your project.
+- Choose a **governance strategy** for your project.
 - Choose a **branching strategy** for your project.
 - Create project-specific **documentation** which outlines how your team members interact with your code.
+
+
+## Warning!
+
+This session is not about all the commands you can run in Git, and it doesn't start by telling you to `init` something.
+
+### If you want that kind of stuff:
+
+[gitforteams.com/resources/offsite.html](http://gitforteams.com/resources/offsite.html)
 
 
 ## Workshop Outcome:<br />Personalized Documentation
@@ -41,9 +34,9 @@ Note: this is where we want to end up by the end of today. You know where each
 branch lives. You know how / where a branch is closed.
 
 
-## slides:<br>gitforteams.com/workshops/devwinter
+## Yes, the slides are uploaded.
 
-Note: You'll want a copy of the slides for reference as we go through the activities. Please open this page now.
+[gitforteams.com/workshops/devwinter](http://gitforteams.com/workshops/devwinter)
 
 ==========
 # Warm-up<br/> Exercise
@@ -85,7 +78,7 @@ Note: right now, there are no wrong answers. It's just a sketch. A rough approxi
 
 ## Example: Single Branch
 
-![Centralized: Everyone works in master branch](../../resources/workflow-centralized.png)
+![Centralized: Everyone works in master branch](../../resources/workflow-single-branch.png)
 
 Everyone pushes their work to the same branch on a central repository. There's no peer review or testing.
 
@@ -119,48 +112,22 @@ Note: Step 1: Identify and describe the governance for your code.
 
 ## Overview
 
-- **Centralized** - Trust Everyone
-- **Patched** - Trust No One; Propose *a Solution*
-- **Forked** - Trust No One; Show *Your Work*
-- **Branched** - Trust the Process
+- **Dispersed Repositories** - Trust Few; Propose *a Solution*
+- **Collocated Repositories** - Trust Few; Talk About *Your Progress*
+- **Shared Repository** - Trust Everyone to use the Process
 
 
-## Centralized: Trust Everyone
-
-Everyone has read-write access to the same repository on a centralized disk (e.g. subversion). This is also how you work *locally* with Git.
-
-![Centralized: Everyone works in master](../../resources/strategy-permissions-centralized.png)
-
-
-## Centralized
-
-<table>
-<tr><th width="50%">Pro</th><th>Con</th></tr>
-<td>Author has to deal with their own merge conflicts.</td>
-<td>No guarantee the code works.</td>
-</tr>
-</table>
-
-
-## Examples of<br >Centralized Workflow?
-
-<div class="fragment">
-<p>Projects using subversion, CVS, or other centralized systems.
-</div>
-
-Note: Internal projects using a centralized system (e.g. subversion).
-
-
-## Patched: Trust No One;<br>Propose a Solution
+## Dispersed: Trust Few;<br>Propose a Solution
 
 Everyone has read access. Very few have write access. Suggested
 changes are presented as whole ideas in a single patch file for
 review.
 
-![Patching: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-patching.png)
+
+![Dispersed Repositories: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-patching.png)
 
 
-## Patched: Trust No One;<br>Propose *a Solution*
+## Contributors with Dispersed Repositories
 
 <table>
 <tr><th width="50%">Pro</th><th>Con</th></tr>
@@ -181,7 +148,7 @@ doesn't work well with web-based code hosting and ticketing
 platforms such as GitHub.
 
 
-## Examples of<br >Patched Workflow?
+## Examples of<br >Projects with Dispersed Contributor Repositories
 
 <ul class="fragment">
 <li>Linux
@@ -192,17 +159,18 @@ platforms such as GitHub.
 Note: Linux, Drupal
 
 
-## Forked: Trust No One;<br>Show *Your Work*
+## Collocated: Trust Few;<br>Talk About *Your Progress*
 
 Project forks give full permissions to developers so they can
 do work in any commit granularity they choose. New work is
 added to the main project through a request to the upstream
 project via a proposed **branch of commits**.
 
-![Forking: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-forking.png)
+
+![Collocated: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-forking.png)
 
 
-## Forked: Trust No One;<br>Show *Your Work*
+## Contributors with Collocated Contribution Repositories
 
 <table>
 <tr><th width="50%">Pro</th><th>Con</th></tr>
@@ -223,7 +191,7 @@ why this may be bad at
 http://developerworkflow.com/resources/evolution-social-coding.html
 
 
-## Examples of<br>Forked Workflow?
+## Examples of<br>Collocated Contributor Repositories
 
 <ul class="fragment">
 <li>Django
@@ -235,14 +203,15 @@ http://developerworkflow.com/resources/evolution-social-coding.html
 Note: Django, Rails, CakePHP
 
 
-## Branched: Trust the Process
+## Shared Repository<br>(Joint Custody)<br>Trust Everyone to Use the Process
 
 Developers work in a branch of the centralized code repository. Only the politics of the project prevent them from committing their work to the main body of work.
 
-![Branching: Trusted coders branch](../../resources/strategy-permissions-branching.png)
+
+![Shared Repository: Trusted coders branch](../../resources/strategy-permissions-branching.png)
 
 
-## Branched: Trust the Process
+## Shared Repository 
 
 <table>
 <tr><th width="50%">Pro</th><th>Con</th></tr>
@@ -259,7 +228,7 @@ Developers work in a branch of the centralized code repository. Only the politic
 Note: This is the default strategy for private code repositories with named team members. For BIG projects, it can be time consuming to assign permissions to all devs.
 
 
-## Examples of<br>Branched Workflow?
+## Examples of<br>Projects with Shared Repositories
 
 <div class="fragment">
 <p>Internal projects with trusted developers
@@ -270,30 +239,29 @@ Note: Internal projects using a centralized system (e.g. Git, Hg, bzr) **OR** ce
 
 ## Review
 
-- **Centralized** - Trust Everyone
-- **Patched** - Trust No One; Propose *a Solution*
-- **Forked** - Trust No One; Show *Your Work*
-- **Branched** - Trust the Process
+- **Contributors with Dispersed Repositories** <br>Trust Few; Propose *a Solution*
+- **Contributors with Collocated Repositories** <br>Trust Few; Talk About *Your Progress*
+- **Contributors Publishing to a Shared Repository** <br>Trust Everyone to use the Process
 
 
 ## So What?
 
-- If you choose **BRANCHED**, you need to setup a PRIVATE repository for your code, and grant permission to all team members to push their changes to the server.
-- If you choose **FORKED**, you need to setup PUBLIC or PRIVATE repository for your code, and ensure all team members to can create their own PUBLIC or PRIVATE copy of the project, AND submit merge requests to the main project.
+- If you choose **Shared Repository**, you need to setup a private repository for your code, and grant permission to all team members to push their changes to the server.
+- If you choose **Collocated Repositories**, you need to setup public or private repository for your code, and ensure all team members to can create their own clone of the project on the same system, and submit merge requests from their copy to the main project.
 
 ==========
 # Part 2
 
-## Separating Collated Code <br />with Branching Strategies
+## Cataloguing Code<br />with Branching Strategies
 
-Identify and describe how your code is collated within your repository.
+Identify and describe how your code is managed <br>within a single repository.
 
 
 ## Branching Strategies
 
 - Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
-- Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
+- Constant Integration: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
 
 
@@ -308,11 +276,11 @@ Identify and describe how your code is collated within your repository.
 Note: if you have the concept of stable releases, hotfixes, point releases, security releases, multiple supported versions, etc, then you need this granularity for your branches. There is always a period of time where you do not trust your code/developers and want to have a separate QA period. Thinking like a download-able product: version 4 vs. version 5 of The Software (a piece of software)
 
 
-## Continuous Deployment
+## Constant Integration 
 
 - Code is deployed faster than scheduled releases; assumes all check-ins are deployable.
 - Requires (trusted) test coverage.
-- Typically uses a mechanical gatekeeper (CI) to check in code to the master branch.
+- Typically uses a mechanical gatekeeper to check in code to the master branch.
 - Often has flippers/flags for fine grained access to in-progress features.
 - Fewer branches to maintain / keep updated.
 
@@ -327,16 +295,16 @@ Which best describes your current setup?
 
 - Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
-- Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
+- Constant Integration: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
   
-<br />On the sketch diagram you created previously, add a CIRCLE (or a triangle, or a pony) around the collation points for code. These represent new branches. Where possible, REDUCE the number of collation points because merging out-of-date branches is a potential pain point.
+Note: On the sketch diagram you created previously, add a CIRCLE (or a triangle, or a pony) around the collation points for code. These represent new branches. Where possible, REDUCE the number of collation points because merging out-of-date branches is a potential pain point.
 
 
 ## So What?
 
-- If you choose **SCHEDULED RELEASE**, streamline how your code is collated for release.
-- If you choose **CONTINUOUS DEPLOYMENT**, codify how trust is deployed in your code.
+- If you choose **scheduled release**, streamline how your code is collated for release.
+- If you choose **constant integration**, codify how trust is deployed in your code.
 
 ==========
 # Part 3
@@ -448,21 +416,7 @@ Note: are you social coding? Or are you using git as it was designed to work wit
 
 ## Putting it all Together
 
-- These examples are pulled from Drupalize.Me when I was working as their PM and sometimes front end dev.
-- This is a product with no external stakeholders.
-- YMMV, YOLO, etc.
-
 Note: these are both in the resources for the repository
-
-
-## Project Highlights
-
-- Drupal 6 -> Drupal 7 upgrade
-- Aiming for speed of work, not stability.
-- Changes were **not** being deployed to the live server.
-- No weekly demos (which you might have for client work).
-- Total time: 18 months.
-- [Star Wars Sprintflow](../../resources/workflow-sample-starwars.md)
 
 
 ## Some Notes on Naming
@@ -473,35 +427,26 @@ Note: these are both in the resources for the repository
 - There are more My Little Ponies.
 
 
-## The Star Wars Workflow
-
-![Example of the Star Wars Sprintflow](../../resources/workflow-starwars.png)
-
-Note: pre-launch: peer review with branched permission strategy; separate QA server where work is available for review, but typically devs just look at their local version of the current dev branch.
-
-
 ## Whispering Pines Workflow
 
-![Example of the Star Wars Sprintflow](../../resources/workflow-whisperingpines.png)
+![Example of the Whispering Pines Sprintflow](../../resources/workflow-whisperingpines.png)
 
-- Aiming for stability first, speed second.
-- Some test coverage.
-- Changes are collated weekly onto a QA server, and deployed from there.
+Note: Aiming for stability first, speed second. Some test coverage. Changes are collated weekly onto a QA server, and deployed from there.
 
 
 ## Whispering Pines Workflow<br />Documentation
 
 github.com/emmajane/gitforteams
 
-- [Whispering Pines Weekly Workflow](../../resources/workflow-sample-whisperingpines-code.md)
-- [Release philosophy](../../resources/workflow-sample-whisperingpines-releasecycle.md)
-- [Deployment](../../resources/workflow-sample-whisperingpines-deployment.md)
+- [Whispering Pines Weekly Workflow](http://github.com/emmajane/gitforteams/blob/master/resources/workflow-sample-whisperingpines-code.md)
+- [Release philosophy](http://github.com/emmajane/gitforteams/blob/master/resources/workflow-sample-whisperingpines-releasecycle.md)
+- [Deployment](http://github.com/emmajane/gitforteams/blob/master/resources/workflow-sample-whisperingpines-deployment.md)
 
 
-## Penultiate Activity: Sketch Your Workflow
+## Activity: Sketch Your Workflow
 
-- Restructure your previous diagrams to include the intrastate where code is collated.
-- Add arrows to represent the direction code travels.
+- Restructure your previous diagrams to show where code is collated for release.
+- Add arrows to represent the direction of travel between repositories for code.
 - To the arrows, add the git commands which you'd use.
 - Create a written narrative which describes the EXACT commands people should use to move code through the process. (See previous slide for examples.)
 
@@ -511,7 +456,7 @@ github.com/emmajane/gitforteams
 <table>
 <tr>
 <th width="50%">Index Card</th>
-<th>Online</th>
+<th>Feedback</th>
 </tr>
 <tr>
 <td>
@@ -520,8 +465,7 @@ github.com/emmajane/gitforteams
 <li>What will you change for your project?
 </td>
 <td>
-<li>Give us your feedback.
-<li>joind.in/talk/view/12738
+Please fill out the feedback forms! We can't make this better without your help.
 </td>
 </tr>
 </table>
@@ -529,10 +473,10 @@ github.com/emmajane/gitforteams
 ==========
 # Resources
 
-- [Developer Workflow](http://www.developerworkflow.com/)
-- Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
-  ([Cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/))
-  or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
-- Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
-  or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
-- Coming "soon": Git for Teams of One or More...the book!
+- Articles: [gitforteams.com](http://gitforteams.com/)
+- Videos: [Collaborating with Git](http://shop.oreilly.com/product/0636920034872.do?cmp=il-prog-books-videos-product_promo_bwidget644_0636920034872_external)
+- Book: [Git for Teams](http://shop.oreilly.com/product/0636920034520.do)
+
+
+Interested in being an Early Ready for *Git for Teams*?
+<br>Leave me your email address, and I'll send you a PDF / .epub!
