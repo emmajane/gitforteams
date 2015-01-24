@@ -103,7 +103,7 @@ Note: CI assumes everything is good, but notifies you if it's not.
 ==========
 # Part 1
 
-## Project Hosting
+## Commit Access <br>and Code Governance
 
 When you first create a Git project, you will need to decide who can commit their code to the repository.
 
@@ -476,6 +476,7 @@ Please fill out the feedback forms! We can't make this better without your help.
 - Articles: [gitforteams.com](http://gitforteams.com/)
 - Videos: [Collaborating with Git](http://shop.oreilly.com/product/0636920034872.do?cmp=il-prog-books-videos-product_promo_bwidget644_0636920034872_external)
 - Book: [Git for Teams](http://shop.oreilly.com/product/0636920034520.do)
+- Slides: [http://gitforteams.com/workshops/devwinter/](gitforteams.com/workshops/devwinter/)
 
 
 Interested in being an Early Ready for *Git for Teams*?
