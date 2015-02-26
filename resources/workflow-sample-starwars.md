@@ -49,10 +49,10 @@ Do your work and push from here.
 
 **To keep your branch current with dev:**
 
-    git checkout dev
-    git pull origin dev
-    git checkout <branchname>
-    git rebase dev
+    `git checkout dev`
+    `git pull origin dev`
+    `git checkout <branchname>`
+    `git rebase dev`
 
 If you have conflicts you need to resolve them in your branch prior to doing more work.
 
@@ -73,27 +73,27 @@ We are currently using a peer-review process. Code reviews help both the reviewe
 
 3. 
 
-    git branch -a # show a list of all available branches
-    git fetch # downloads the branches
-    git checkout --track -b NNNN-branch-name origin/NNNN-branch-name # NNNN should be the ticket number
+    `git branch -a` # show a list of all available branches
+    `git fetch` # downloads the branches
+    `git checkout --track -b NNNN-branch-name origin/NNNN-branch-name` # NNNN should be the ticket number
     (short version of above = git checkout --track origin NNNN-branch-name)
 
 3. Complete any steps outlined in the ticket to confirm the branch works "as advertised" in the ticket. If there are any errors, or things are missing, attempt to verify if the problem is on your end (e.g. did you clear cache?). If you cannot replicate what you should be seeing, contact the developer/designer and ask them for help to get your local environment looking like what it should in the ticket.
 
 4. Once you've confirmed the branch is correct and complete it can be merged into the dev branch. Ensure your branch is up-to-date:
 
-    git checkout dev
-    git pull
-    git checkout NNNN-branch-name
-    git rebase dev
+    `git checkout dev`
+    `git pull`
+    `git checkout NNNN-branch-name`
+    `git rebase dev`
 
 5. Confirm the branch is still working "as advertised" (see step 3).
 
 6. Merge the branch you've reviewed into dev and push it back up.
 
-    git checkout dev
-    git merge --no-ff NNNN-branch-name
-    git push
+    `git checkout dev`
+    `git merge --no-ff NNNN-branch-name`
+    `git push`
 
 7. Confirm your new branch has been successfully integrated into the development site. It will take about five minutes for d7.example.com to be updated with the revised branch. Complete any additional steps required to sync the database with the new code (e.g. enable new modules). Proceed only once the new code is working on d7.example.com
 
