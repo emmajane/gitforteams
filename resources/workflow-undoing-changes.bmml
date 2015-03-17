@@ -1,4 +1,4 @@
- <mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1629" measuredH="1703" mockupW="1612" mockupH="1691">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1629" measuredH="1703" mockupW="1612" mockupH="1691">
   <controls>
     <control controlID="8" controlTypeID="__group__" x="17" y="12" w="421" h="431" measuredW="421" measuredH="431" zOrder="0" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
@@ -262,10 +262,10 @@
                     <text>Are%20there%0Achanged%20files%0Ayou%20want%20to%20preserve%0Ain%20the%20working%20%0Adirectory%3F</text>
                   </controlProperties>
                 </control>
-                <control controlID="35" controlTypeID="com.balsamiq.mockups::RoundButton" x="367" y="368" w="177" h="136" measuredW="32" measuredH="32" zOrder="35" locked="false" isInGroup="0">
+                <control controlID="35" controlTypeID="com.balsamiq.mockups::RoundButton" x="373" y="371" w="167" h="136" measuredW="32" measuredH="32" zOrder="35" locked="false" isInGroup="0">
                   <controlProperties>
                     <shape>diamond</shape>
-                    <text>Do%20you%20want%20to%20redo%20the%20change%20later%3F</text>
+                    <text>Do%20you%20want%20%0Ato%20redo%20the%20%0Achange%20later%3F</text>
                   </controlProperties>
                 </control>
                 <control controlID="36" controlTypeID="com.balsamiq.mockups::Arrow" x="489" y="492" w="87" h="36" measuredW="150" measuredH="100" zOrder="36" locked="false" isInGroup="0">
@@ -308,6 +308,11 @@
             <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="0" y="0" w="-1" h="-1" measuredW="432" measuredH="43" zOrder="2" locked="false" isInGroup="38">
               <controlProperties>
                 <text>Undoing%20Changes%20in%20Git</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="70" w="275" h="47" measuredW="275" measuredH="80" zOrder="3" locked="false" isInGroup="38">
+              <controlProperties>
+                <text>Author%3A%20emmajane%0AContributors%3A%20jameyhicks%0ALicense%3A%20CC-BY</text>
               </controlProperties>
             </control>
           </groupChildrenDescriptors>
