@@ -4,14 +4,15 @@ This is not a talk about all the commands you can run in Git.
 
 ### Resources for Commands:
 
-- [Mega Resources List o' Links](http://developerworkflow.com/resources/offsite.html)
+- www.gitforteams.com
+- [Mega Resources List o' Links](http://gitforteams.com/resources/offsite.html)
 - [Git Documentation](http://git-scm.com/doc)
 - [Pro Git](http://git-scm.com/book)
 
 
 ## Yes, the slides are uploaded
 
-github.com/emmajane/gitforteams
+github.com/gitforteams/gitforteams
 
 
 ## On an index card...
@@ -41,7 +42,7 @@ Note: this is where we want to end up by the end of today. You know where each
 branch lives. You know how / where a branch is closed.
 
 
-## slides:<br>github.com/emmajane/gitforteams
+## slides:<br>github.com/gitforteams/gitforteams
 
 Note: You'll want a copy of the slides for reference as we go through the activities. Please open this page now.
 
@@ -465,7 +466,7 @@ Note: pre-launch: peer review with branched permission strategy; separate QA ser
 
 ## Whispering Pines Workflow<br />Documentation
 
-github.com/emmajane/gitforteams
+github.com/gitforteams/gitforteams
 
 - [Whispering Pines Weekly Workflow](../../resources/workflow-sample-whisperingpines-code.md)
 - [Release philosophy](../../resources/workflow-sample-whisperingpines-releasecycle.md)
