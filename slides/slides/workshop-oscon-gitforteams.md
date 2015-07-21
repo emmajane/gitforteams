@@ -119,39 +119,12 @@ Note: Step 1: Identify and describe the governance for your code.
 
 ## Overview
 
-- **Centralized** - Trust Everyone
-- **Patched** - Trust No One; Propose *a Solution*
-- **Forked** - Trust No One; Show *Your Work*
-- **Branched** - Trust the Process
+- **Dispersed Contributor Model** - Trust No One; Propose *a Solution*
+- **Collocated Contributor Repositories** - Trust No One; Show *Your Work*
+- **Shared Maintenance** - Trust the Process
 
 
-## Centralized: Trust Everyone
-
-Everyone has read-write access to the same repository on a centralized disk (e.g. subversion). This is also how you work *locally* with Git.
-
-![Centralized: Everyone works in master](../../resources/strategy-permissions-centralized.png)
-
-
-## Centralized
-
-<table>
-<tr><th width="50%">Pro</th><th>Con</th></tr>
-<td>Author has to deal with their own merge conflicts.</td>
-<td>No guarantee the code works.</td>
-</tr>
-</table>
-
-
-## Examples of<br >Centralized Workflow?
-
-<div class="fragment">
-<p>Projects using subversion, CVS, or other centralized systems.
-</div>
-
-Note: Internal projects using a centralized system (e.g. subversion).
-
-
-## Patched: Trust No One;<br>Propose a Solution
+## Dispersed Contributor: Trust No One;<br>Propose a Solution
 
 Everyone has read access. Very few have write access. Suggested
 changes are presented as whole ideas in a single patch file for
@@ -160,7 +133,7 @@ review.
 ![Patching: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-patching.png)
 
 
-## Patched: Trust No One;<br>Propose *a Solution*
+## Dispersed Contributor: Trust No One;<br>Propose *a Solution*
 
 <table>
 <tr><th width="50%">Pro</th><th>Con</th></tr>
@@ -181,7 +154,7 @@ doesn't work well with web-based code hosting and ticketing
 platforms such as GitHub.
 
 
-## Examples of<br >Patched Workflow?
+## Examples of<br >Dispersed Contributors?
 
 <ul class="fragment">
 <li>Linux
@@ -192,7 +165,7 @@ platforms such as GitHub.
 Note: Linux, Drupal
 
 
-## Forked: Trust No One;<br>Show *Your Work*
+## Collocated Contributor Repositories: Trust No One;<br>Show *Your Work*
 
 Project forks give full permissions to developers so they can
 do work in any commit granularity they choose. New work is
@@ -202,7 +175,7 @@ project via a proposed **branch of commits**.
 ![Forking: Untrusted coders; typical for open source projects](../../resources/strategy-permissions-forking.png)
 
 
-## Forked: Trust No One;<br>Show *Your Work*
+## Collocated Contributor Repositories: Trust No One;<br>Show *Your Work*
 
 <table>
 <tr><th width="50%">Pro</th><th>Con</th></tr>
@@ -223,7 +196,7 @@ why this may be bad at
 http://developerworkflow.com/resources/evolution-social-coding.html
 
 
-## Examples of<br>Forked Workflow?
+## Examples of<br>Collocated Contributor Repositories?
 
 <ul class="fragment">
 <li>Django
@@ -235,14 +208,14 @@ http://developerworkflow.com/resources/evolution-social-coding.html
 Note: Django, Rails, CakePHP
 
 
-## Branched: Trust the Process
+## Shared Maintenance: Trust the Process
 
 Developers work in a branch of the centralized code repository. Only the politics of the project prevent them from committing their work to the main body of work.
 
 ![Branching: Trusted coders branch](../../resources/strategy-permissions-branching.png)
 
 
-## Branched: Trust the Process
+## Shared Maintenance: Trust the Process
 
 <table>
 <tr><th width="50%">Pro</th><th>Con</th></tr>
@@ -259,7 +232,7 @@ Developers work in a branch of the centralized code repository. Only the politic
 Note: This is the default strategy for private code repositories with named team members. For BIG projects, it can be time consuming to assign permissions to all devs.
 
 
-## Examples of<br>Branched Workflow?
+## Examples of<br>Shared Maintenance?
 
 <div class="fragment">
 <p>Internal projects with trusted developers
@@ -270,16 +243,15 @@ Note: Internal projects using a centralized system (e.g. Git, Hg, bzr) **OR** ce
 
 ## Review
 
-- **Centralized** - Trust Everyone
-- **Patched** - Trust No One; Propose *a Solution*
-- **Forked** - Trust No One; Show *Your Work*
-- **Branched** - Trust the Process
+- **Dispersed Contributors** - Trust No One; Propose *a Solution*
+- **Collocated Contributors** - Trust No One; Show *Your Work*
+- **Shared Maintenance** - Trust the Process
 
 
 ## So What?
 
-- If you choose **BRANCHED**, you need to setup a PRIVATE repository for your code, and grant permission to all team members to push their changes to the server.
-- If you choose **FORKED**, you need to setup PUBLIC or PRIVATE repository for your code, and ensure all team members to can create their own PUBLIC or PRIVATE copy of the project, AND submit merge requests to the main project.
+- If you choose **shared maintenance**, you need to setup a PRIVATE repository for your code, and grant permission to all team members to push their changes to the server.
+- If you choose **collocated repositories**, you need to setup PUBLIC or PRIVATE repository for your code, and ensure all team members to can create their own PUBLIC or PRIVATE copy of the project, AND submit merge requests to the main project.
 
 ==========
 # Part 2
@@ -291,24 +263,24 @@ Identify and describe how your code is collated within your repository.
 
 ## Branching Strategies
 
-- Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
+- Scheduled Deployment: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
-- Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
+- Branch-per-Feature: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
+- State Branching: [GitLab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/)
 
-
-## Scheduled Release
+## Scheduled Deployment
 
 - Optimized for the collation of many smaller changes into a single release.
 - Typically used for a download-able product; or web site with a scheduled release cycle (e.g. "Wednesdays").
 - Incorporates human-reviews, and possibly automated tests.
 
-![scheduled release: gitflow](../../resources/strategy-branching-gitflow.png)
+![scheduled deployment: gitflow](../../resources/strategy-branching-gitflow.png)
 
 Note: if you have the concept of stable releases, hotfixes, point releases, security releases, multiple supported versions, etc, then you need this granularity for your branches. There is always a period of time where you do not trust your code/developers and want to have a separate QA period. Thinking like a download-able product: version 4 vs. version 5 of The Software (a piece of software)
 
 
-## Continuous Deployment
+## Branch-per-Feature Deployment
 
 - Code is deployed faster than scheduled releases; assumes all check-ins are deployable.
 - Requires (trusted) test coverage.
@@ -316,7 +288,7 @@ Note: if you have the concept of stable releases, hotfixes, point releases, secu
 - Often has flippers/flags for fine grained access to in-progress features.
 - Fewer branches to maintain / keep updated.
 
-![continuous delivery: feature branches](../../resources/strategy-branching-cd.png)
+![branch-per-feature: feature branches](../../resources/strategy-branching-cd.png)
 
 Note: if you don't need the granularity of multiple supported versions, you can probably get away with something closer to this branching strategy. Can you get away with just tags? Do you intend to go back and work on a previous version? As soon as you have the concept of a separate security hotfix, you need to introduce a separate branch. In CD: everything is urgent, so there's not a separation of a really urgent security fix. CI, CD vs CD: http://puppetlabs.com/blog/continuous-delivery-vs-continuous-deployment-whats-diff
 
@@ -325,18 +297,20 @@ Note: if you don't need the granularity of multiple supported versions, you can 
 
 Which best describes your current setup?
 
-- Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
+- Scheduled Deployment: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) 
   or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
-- Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
+- Branch-per-Feature: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
+- State Branching: [GitLab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/)
   
 <br />On the sketch diagram you created previously, add a CIRCLE (or a triangle, or a pony) around the collation points for code. These represent new branches. Where possible, REDUCE the number of collation points because merging out-of-date branches is a potential pain point.
 
 
 ## So What?
 
-- If you choose **SCHEDULED RELEASE**, streamline how your code is collated for release.
-- If you choose **CONTINUOUS DEPLOYMENT**, codify how trust is deployed in your code.
+- If you choose **SCHEDULED DEPLOYMENT**, streamline how your code is collated for release.
+- If you choose **BRANCH-PER-FEATURE**, codify how trust is deployed in your code.
+- If you choose **STATE BRANCHING**, establish your infrastructure and automate where possible.
 
 ==========
 # Part 3
@@ -521,7 +495,7 @@ github.com/emmajane/gitforteams
 </td>
 <td>
 <li>Give us your feedback.
-<li>joind.in/talk/view/12738
+<li>http://www.oscon.com/open-source-2015/public/schedule/detail/40461
 </td>
 </tr>
 </table>
@@ -529,10 +503,4 @@ github.com/emmajane/gitforteams
 ==========
 # Resources
 
-- [Developer Workflow](http://www.developerworkflow.com/)
-- Scheduled Release: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
-  ([Cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/))
-  or [Simplified Gitflow](http://drewfradette.ca/a-simpler-successful-git-branching-model/)
-- Continuous Deployment: [Branch Per Feature](https://www.acquia.com/blog/pragmatic-guide-branch-feature-git-branching-strategy)
-  or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
-- Coming "soon": Git for Teams of One or More...the book!
+- [Git for Teams](http://www.gitforteams.com/)
