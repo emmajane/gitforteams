@@ -270,6 +270,7 @@ Identify and describe how your code is collated within your repository.
   or [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
 - State Branching: [GitLab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/)
 
+
 ## Scheduled Deployment
 
 - Optimized for the collation of many smaller changes into a single release.
