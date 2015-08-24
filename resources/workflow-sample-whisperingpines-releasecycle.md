@@ -42,7 +42,7 @@ The main PM responsibility on this side is making sure new tickets are reviewed,
 
 This new process has made our site-building efforts much more flexible, which is really important for us. We all have multiple areas of responsibility, and being able to balance your available time for the site with other tasks is huge. If you end up not actually having time for tickets due to other responsibilities (remember, creating content and taking care of our members are our main responsibilities—not site development), you just don't assign any to yourself for that week, instead of feeling bad because you couldn't complete the ones assigned to you by someone else. On the other hand if you are blowing through tickets, then you can simply grab something from the pile and keep going without waiting on someone to give you work.
 
-We work with a peer review system. Please note that if you do not have everything in place for a review, your ticket is likely going to be kicked back to you to resolve the issues first, especially if it isn't clear how to test/review the ticket. More about the peer review process can be found at [Peer Review]().
+We work with a peer review system. Please note that if you do not have everything in place for a review, your ticket is likely going to be kicked back to you to resolve the issues first, especially if it isn't clear how to test/review the ticket. More about the peer review process can be found at [Peer Review](http://gitforteams.com/resources/review-process.html).
 
 ### Working on Tickets
 
