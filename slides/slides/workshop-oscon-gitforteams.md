@@ -474,7 +474,7 @@ github.com/gitforteams/gitforteams
 - [Deployment](../../resources/workflow-sample-whisperingpines-deployment.md)
 
 
-## Penultiate Activity: Sketch Your Workflow
+## Penultimate Activity: Sketch Your Workflow
 
 - Restructure your previous diagrams to include the intrastate where code is collated.
 - Add arrows to represent the direction code travels.
