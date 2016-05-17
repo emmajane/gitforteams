@@ -5,9 +5,8 @@ This is not a talk about all the commands you can run in Git.
 ### Resources for Commands:
 
 - www.gitforteams.com
-- [Mega Resources List o' Links](http://gitforteams.com/resources/offsite.html)
-- [Git Documentation](http://git-scm.com/doc)
-- [Pro Git](http://git-scm.com/book)
+- Git documentation - git-scm.com/doc
+- Pro Git - git-scm.com/book
 
 
 ## Yes, the slides are uploaded
@@ -505,4 +504,4 @@ github.com/gitforteams/gitforteams
 ==========
 # Resources
 
-- [Git for Teams](http://www.gitforteams.com/)
+www.gitforteams.com
