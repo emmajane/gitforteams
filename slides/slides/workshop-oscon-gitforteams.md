@@ -495,8 +495,8 @@ github.com/gitforteams/gitforteams
 <li>What will you change for your project?
 </td>
 <td>
-<li>Give us your feedback.
-<li>http://www.oscon.com/open-source-2015/public/schedule/detail/40461
+Give us your feedback.
+http://conferences.oreilly.com/oscon/open-source-us/public/schedule/detail/48563
 </td>
 </tr>
 </table>
