@@ -135,7 +135,7 @@
                 </control>
                 <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="790" y="1142" w="-1" h="-1" measuredW="174" measuredH="27" zOrder="15" locked="false" isInGroup="0">
                   <controlProperties>
-                    <text>reset%20--hard%20%3Ccommit_id%3E</text>
+                    <text>stash%20--all%20%26%26%20reset%20--hard%20%3Ccommit_id%3E</text>
                   </controlProperties>
                 </control>
                 <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="726" y="931" w="-1" h="-1" measuredW="220" measuredH="27" zOrder="16" locked="false" isInGroup="0">
