@@ -284,7 +284,7 @@
                 </control>
                 <control controlID="38" controlTypeID="com.balsamiq.mockups::Button" x="534" y="529" w="-1" h="-1" measuredW="87" measuredH="27" zOrder="38" locked="false" isInGroup="0">
                   <controlProperties>
-                    <text>stash%20save</text>
+                    <text>stash%20save%20--include-untracked</text>
                   </controlProperties>
                 </control>
                 <control controlID="39" controlTypeID="com.balsamiq.mockups::Button" x="584" y="637" w="-1" h="-1" measuredW="81" measuredH="27" zOrder="39" locked="false" isInGroup="0">
