@@ -200,7 +200,7 @@
                 </control>
                 <control controlID="25" controlTypeID="com.balsamiq.mockups::Button" x="241" y="948" w="-1" h="-1" measuredW="92" measuredH="27" zOrder="25" locked="false" isInGroup="0">
                   <controlProperties>
-                    <text>reset%20--hard</text>
+                    <text>stash%20--all</text>
                   </controlProperties>
                 </control>
                 <control controlID="26" controlTypeID="com.balsamiq.mockups::Button" x="225" y="1112" w="-1" h="-1" measuredW="125" measuredH="27" zOrder="26" locked="false" isInGroup="0">
