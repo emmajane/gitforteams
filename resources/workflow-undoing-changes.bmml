@@ -140,7 +140,7 @@
                 </control>
                 <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="726" y="931" w="-1" h="-1" measuredW="220" measuredH="27" zOrder="16" locked="false" isInGroup="0">
                   <controlProperties>
-                    <text>rebase%20--interactive%20%3Ccommit_id%3E</text>
+                    <text>rebase%20--interactive%20--preserve-merges%20%3Ccommit_id%3E</text>
                   </controlProperties>
                 </control>
                 <control controlID="17" controlTypeID="com.balsamiq.mockups::RoundButton" x="967" y="556" w="164" h="136" measuredW="32" measuredH="32" zOrder="17" locked="false" isInGroup="0">
