@@ -3,6 +3,8 @@ Git for Teams of One or More
 
 Supporting files for workshops and sessions about creating a developer work flow for your project (and your team) with the version control system, git.
 
+This repository is used as the base for a video series with O'Reilly.
+
 You may also be interested in the companion book, [Git for Teams](http://shop.oreilly.com/product/0636920034520.do), and the hands-on videos [Collaborating with Git](http://shop.oreilly.com/product/0636920034872.do).
 
 ## Content
